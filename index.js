@@ -21,7 +21,7 @@ const io = new Server(server,{
     }
 })
 // mongoDB connection
-const MONGO_URL = "mongodb+srv://gokulakrishnan:Gokul4580@cluster0.fm08iky.mongodb.net/?retryWrites=true&w=majority"
+const MONGO_URL = process.env.MONGO_URL
 const client = new MongoClient(MONGO_URL)
 client.connect()
 
